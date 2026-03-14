@@ -1,21 +1,45 @@
-# Next.js template
+# Modern Portfolio
 
-This is a Next.js template with shadcn/ui.
+This is a modern, responsive developer portfolio built with Next.js 15, React 19, and TypeScript. All data is mock/static — no backend required.
 
-## Adding components
+## Features
 
-To add components to your app, run the following command:
+- Responsive UI (desktop, tablet, mobile)
+- Home, About, Projects, Contact pages
+- Project showcase with images, descriptions, and links
+- Dark/light theme toggle
+- Static mock data (no backend)
+- Accessible, fast, and SEO-friendly
 
-```bash
-npx shadcn@latest add button
-```
+## Getting Started
 
-This will place the ui components in the `components` directory.
+1. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+2. **Run the dev server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+3. **Open** [http://localhost:3000](http://localhost:3000)
 
-## Using components
+## Folder Structure
 
-To use the components in your app, import them as follows:
+- `app/` — Next.js App Router pages
+- `components/` — UI and layout components
+- `data/` — Mock data (profile, projects, nav)
+- `public/` — Static assets (images, favicon)
 
-```tsx
-import { Button } from "@/components/ui/button";
-```
+## Customization
+
+- Edit `data/profile.ts` for your info
+- Edit `data/projects.ts` for your projects
+- Edit `data/navLinks.ts` for navigation
+
+---
+
+**Built with ❤️ by Asadbek**
