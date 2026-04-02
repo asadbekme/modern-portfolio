@@ -1,4 +1,5 @@
 import { profile } from "@/data/profile"
+import Link from "next/link"
 
 export default function AboutPage() {
   return (
@@ -17,36 +18,36 @@ export default function AboutPage() {
         </li>
         <li>
           <strong>Email:</strong>{" "}
-          <a
+          <Link
             href={`mailto:${profile.email}`}
             className="text-primary hover:underline"
           >
             {profile.email}
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="mt-2 flex gap-3">
-        <a
+        <Link
           href={profile.social.github}
           target="_blank"
           className="hover:underline"
         >
           GitHub
-        </a>
-        <a
+        </Link>
+        <Link
           href={profile.social.linkedin}
           target="_blank"
           className="hover:underline"
         >
           LinkedIn
-        </a>
-        <a
-          href={profile.social.twitter}
+        </Link>
+        <Link
+          href={profile.social.website}
           target="_blank"
           className="hover:underline"
         >
-          Twitter
-        </a>
+          Website
+        </Link>
       </div>
     </main>
   )
