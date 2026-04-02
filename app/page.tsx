@@ -33,11 +33,11 @@ export default function Page() {
             LinkedIn
           </Link>
           <Link
-            href={profile.social.twitter}
+            href={profile.social.website}
             target="_blank"
             className="hover:underline"
           >
-            Twitter
+            Website
           </Link>
         </div>
       </section>
